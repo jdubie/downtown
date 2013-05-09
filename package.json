@@ -1,0 +1,11 @@
+{
+  "name": "markdowntown",
+  "version": "0.0.1",
+  "description": "Preview markdown with github styling",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.3",
+    "marked": "~0.2.8",
+    "node-watch": "~0.3.3"
+  }
+}
