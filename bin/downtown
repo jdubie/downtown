@@ -1,10 +1,19 @@
 #!/usr/bin/env node
 
-fs = require('fs');
-var msg = fs.readFileSync('./bin/intro_message.txt', 'utf8'); // utf8-art?
+var fs   = require('fs'),
+    path = require('path');
+
+/*
+ * utf8-art?
+ */
+var msg = fs.readFileSync(path.join(__dirname, 'intro_message.txt'), 'utf8');
+
 console.log('From way downtown...');
 msg.split('\n').forEach(function(line) { console.log(line); });
 console.log('Open your browser to http://localhost:6969');
 
-require('../index')
+/*
+ * Start server
+ */
+require('../index');
 
